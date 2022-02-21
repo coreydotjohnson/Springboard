@@ -1,0 +1,110 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.top {
+    height: 20%;
+}
+
+.top a {
+    display: inline-block;
+    position: absolute;
+    left: 2.5em;
+    top: 2.5em;
+    background-color: hsl(208, 100%, 73%);
+    color: aliceblue;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 1.75em;
+    border-radius: 5%;
+    padding: 0.5em 1em;
+
+}
+
+.top a:hover {
+    background-color: hsl(208, 100%, 53%);
+
+}
+
+.top a:active {
+    transform: scale(1.025);
+}
+
+.middle {
+    display: absolute;
+    margin: 0 auto;
+    box-shadow: 0px 2px 2px 0px #bbb;
+    height: 400px;
+    width: 300px;
+    background-color: #eee;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.middle .img{
+    height: 10%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1543201245-c9031909fe6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-color: #eee;
+    padding-bottom: 50%;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.middle-title, .middle-description {
+    padding-left: 5px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.each-gif {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border: 8px solid peachpuff;
+    background-color: peachpuff;
+    border-radius: 8px;
+    background-size: cover;
+}
+
+.gif-1, .gif-2, .gif-3 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.gif-1 {
+    background-image: url("https://media.giphy.com/media/HrB1MUATg24Ra/giphy.gif");
+}
+.gif-2 {
+    background-image: url("https://media.giphy.com/media/Y8bL4lil6jive/giphy.gif");
+}
+.gif-3 {
+    background-image: url("https://media.giphy.com/media/OcZp0maz6ALok/giphy.gif");
+}
+
+.caption {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    text-align: center;
+    top: 300px;
+    transition: top 0.3s ease-in;
+}
+
+.each-gif:hover .caption{
+    top: 0;
+}
